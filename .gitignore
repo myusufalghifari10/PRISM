@@ -205,3 +205,45 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+# --- 1. DATASET & FILE RAKSASA (WAJIB IGNORE) ---
+mimic_data_raw/
+export_dir/
+mimic-code/
+
+# File Kompresi Data
+*.tar.gz
+*.zip
+*.rar
+*.7z
+
+# File CSV (Data Tabel)
+*.csv
+# Kecuali requirements.txt (ini bukan data)
+!requirements.txt
+
+# --- 2. HASIL TRAINING & MODEL ---
+# File model pickle (bisa bergiga-giga)
+*.pkl
+
+# Kalau kamu mau menyimpan bestpol untuk perbandingan,
+# hapus tanda pagar (#) di baris bawah ini:
+# !bestpol_cloud.pkl
+# !reference_matrices.mat
+
+# --- 3. ENVIRONMENT & PYTHON CACHE ---
+env_py37/
+venv/
+.env
+__pycache__/
+*.pyc
+
+# --- 4. JUPYTER NOTEBOOK SAMPAH ---
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# --- 5. LOGS & SYSTEM ---
+*.log
+logfile
+.DS_Store
